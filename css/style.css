@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(/Img/Stroopwafel-kanjer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer"
+}
+nav{
+    z-index: 999;
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
+}
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(82, 79, 79);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+aside{
+    height: calc(100vh - 82.4px);
+    top: 82.4px;
+    position: sticky;
+    align-self: start;
+    grid-area: sidebar;
+    
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    color: red;
+    padding: 2em;
+    
+}
+.glass-container{
+    height: 600px;
+    width: 450px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(6px);
+    
+
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+p{
+    font-size: 16px;
+    color: whitesmoke
+}
+
+img{
+    width: 100px;
+    animation: rotation 5s infinite linear;
+}
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
