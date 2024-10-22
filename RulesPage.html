@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safety Tips</title>
+    <meta name="author" content="Milen Savov">
+    <title>Rules</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,28 +13,38 @@
 </head>
 <body>
     <header class="logo">
-        <img class="logopic" src="Img/Get to da waffle.png" alt="">
+        <img class="logopic" src="Img/Logopic.png" alt="logopic" title="Bike with Stroopwaflewheels">
         <h1>Fietsgang</h1>
     </header>
     <header class="navbartop">
         <nav>
             <ul> 
                 <li><a class="homeButton" href="/index.html">Home</a></li>
-                <li><a class="shoppingButton" href="/Shopping page.html">Find Your First Bike</a></li>
+                <li><a class="shoppingButton" href="/ShoppingPage.html">Find Your First Bike</a></li>
                 <li><a class="safetyButton" href="/SafetyPage.html">Learn Cycling Safety Tips</a></li>
-                <li><a id="active" class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
-                <li><a class="repairsButton" href="Repairs page.html">Easy DIY Fixes</a></li>
+                <li><a id="activeNav" class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
+                <li><a class="repairsButton" href="RepairsPage.html">Easy DIY Fixes</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="hero-image">
-            <article class="hero-text">
-                <h2>Pedal with Precision – <em>Know the Rules, Ride with Confidence!</em></h2>
-               <a href="" class="CTAButtons">Contact Us</a>
+    <section>
+        <article id="heroImageRules"  class="hero-image">
+        <article class="hero-text">
+            <h2>Pedal with Precision – <em>Know the Rules, Ride with Confidence!</em></h2>
+            <a href="/ContactPage.html" class="CTAButtons">Contact Us</a>
             </article>
         </article>
-    </article>
+
+        <article class="heroMobile">
+            <article class="heroTextMobile">
+                <img id="imageHeroMobile4" src="/Img/RulesBanner.jpg" alt="CentraalStation">
+                <h2>Pedal with Precision – <em>Know the Rules, Ride with Confidence!</em></h2>
+                <a href="/ContactPage.html" class="CTAButtons">Contact Us</a>
+            </article>
+        </article>
+    </section>
+    
         <section class="welcome-section">
             <article class="sectioncentring">
                 <header class="welcome-section__intro">
@@ -56,19 +67,19 @@
                 <h2>Pay attention to the signs:</h2></header>
     
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
-                <img src="/Img/Trafic light final.webp" alt="IsnAmsterdamBannerPic" class="infoCardPic">
+                <header id="rules1" class="svgBackground"></header>
+                <img src="/Img/TrafficLifgtFinal.webp" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>Mixed traffic:
                     </h3>
                         <p>Attention: This sign signifies that the road is shared by both cars and cyclists, with priority given to 
                             cyclists. Motor vehicles must yield to cyclists. Stay safe and share the road!
                         </p>
-                </img>
+                
             </article>
 
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
-                <img src="/Img/Tram tracks.gif" alt="IsnAmsterdamBannerPic" class="infoCardPic">
+                <header id="rules2" class="svgBackground"></header>
+                <img src="/Img/TramTracks.gif" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>To ride here or not to?
                     </h3>
                         <p><em>It’s easy! </em></p>
@@ -77,60 +88,60 @@
                             
                             <p>The red version of this sign indicates no cyclists are allowed on this street and alternative road should be found.
                         </p>
-                </img>
+                
             </article>
             
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
-                <img src="/Img/Hand signals.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
+                <header id="rules3" class="svgBackground"></header>
+                <img src="/Img/HandSignals.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>Parking zones:
                     </h3>
                         <p>The crossed out sign indicates that it is prohibited to park inside this zone, so do not park your bike there or it might get removed 
                             by the local authorities. Parking is allowed if the sign is not crossed out.
                         </p>
-                </img>
+                
             </article>
 
             <header><h2>2nd:</h2>
                 <h2>Additional rules:</h2></header>
 
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
+                <header id="rules4" class="svgBackground"></header>
                 <img src="/Img/PhoneHolder.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>No texting and riding!
                     </h3>
-                        <p>While cycling, it's common to see locals multitasking, but using a phone while riding can lead to accidents or result in a €100 fine 
+                        <p>While cycling, it's common to see locals multitasking, but using a phone while riding can lead to accidents or result in a &euro; 100 fine 
                             if caught by local authorities. To make a call while cycling, it's advisable to use hands-free options such as headphones. Similarly, 
                             if using a phone for navigation, it should be securely attached to a phone holder on the handlebars.
                         </p>
-                </img>
+                
             </article>
 
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
+                <header id="rules5" class="svgBackground"></header>
                 <img id="rotatePic" src="/Img/LightKit.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>Let there be light!
                     </h3>
                         <p>Even though the streets and bike paths are well lit, it's mandatory to have bike lights when cycling at night. These lights serve as a 
                             way to signal your presence to other road users rather than just illuminating your path. Failure to have lights on your bicycle can 
-                            result in a 60 euro fine, so it's essential to carry a pair of lights at all times.
+                            result in a &euro; 60 fine, so it's essential to carry a pair of lights at all times.
                         </p>
-                </img>
+                
             </article>
             
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
+                <header id="rules6" class="svgBackground"></header>
                 <img src="/Img/Zebra2.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>Stop At Crossings!
                     </h3>
                         <p>At zebra crossings, it's crucial to come to a complete stop and allow pedestrians to safely cross the street. This practice promotes 
                             safety and consideration for others sharing the road.
                         </p>
-                </img>
+                
             </article>
 
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
+                <header id="rules7" class="svgBackground"></header>
                 <img src="/Img/BikeRack1.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>Do Not park there!
                     </h3>
@@ -138,11 +149,11 @@
                              Avoid chaining your bike to bridges, as some bridges are designed to swing open to accommodate larger boats passing underneath. Bicycles 
                              parked in improper areas may be impounded and stored in the Bicycle Depot, with retrieval possible only after paying a fine.
                         </p>
-                </img>
+                
             </article>
 
             <article class="infoCard">
-                <header id="safety" class="svgBackground"></header>
+                <header id="rules8" class="svgBackground"></header>
                 <img src="/Img/rijk.jpg" alt="IsnAmsterdamBannerPic" class="infoCardPic">
                 <h3>Be Mindful When Riding with 
                     Company!
@@ -150,7 +161,7 @@
                         <p>When riding, it's important to be mindful of your abilities and adjust your speed accordingly. If you find yourself moving slower than the traffic, 
                             it's best to stay on the right side of the road. When looking to overtake another vehicle, ensure that you do so from the left. Additionally, in busy traffic situations, it's advisable to refrain from riding alongside a friend to prioritize the safety of everyone on the road.
                         </p>
-                </img>
+                
             </article>
 
         </section>
@@ -160,10 +171,10 @@
         <nav class="nav-bottom">
             <ul>
                 <li><a class="homeButton" href="/index.html">Home</a></li>
-                <li><a class="shoppingButton" href="/Shopping page.html">Find Your First Bike</a></li>
+                <li><a class="shoppingButton" href="/ShoppingPage.html">Find Your First Bike</a></li>
                 <li><a class="safetyButton" href="/SafetyPage.html">Learn Cycling Safety Tips</a></li>
-                <li><a id="active" class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
-                <li><a class="repairsButton" href="Repairs page.html">Easy DIY Fixes</a></li>
+                <li><a id="activeFooter" class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
+                <li><a class="repairsButton" href="RepairsPage.html">Easy DIY Fixes</a></li>
             </ul>
         </nav>
         <aside class="side-socials">

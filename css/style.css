@@ -1,3 +1,15 @@
+html{
+    box-sizing: border-box; 
+}  
+*{
+margin: 0;
+padding: 0;   
+box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+
 /*Main colors*/
 :root {
     --mainColor-color: #00205C;
@@ -50,13 +62,21 @@
         font-family: "Nunito Sans", sans-serif;
         font-weight: 700;
         color: var(--mainColor-color);
+        line-height: 1.5;
+        word-spacing: 3px;
+        text-indent: 20px;
 
         
+    }
+    p::first-letter{
+        font-size: 1.2em;
     }
     h1{
         font-size: 40px;
         font-family: "Acme", sans-serif;
         color: var(--mainColor-color);
+        letter-spacing: 2px;
+        text-transform: uppercase;
     
     }
     h2{
@@ -73,13 +93,7 @@
         color: var(--mainColor-color);
         
     }
-    html{
-        box-sizing: border-box;   
-*{
-    margin: 0;
-    padding: 0;   
-    box-sizing: border-box;
-}
+
 .logo{
     padding: 0.7em 0 0.7em;
     background-color: white;
@@ -109,6 +123,7 @@ nav ul{
     margin: 0;
     padding: 0;
     justify-content: center;
+    gap: 20px;
 }
 li{
     padding: 10px 0 10px;
@@ -132,7 +147,7 @@ li a{
     height: 24px;
     margin-right: 3px;
     background: no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_3388_5819)'%3E%3Cpath d='M16.4212 14.3693C16.1658 14.3693 15.9214 14.4082 15.6937 14.4803L14.6162 11.7867C14.5718 11.6812 14.4773 11.6146 14.3663 11.6146H13.1C12.95 11.6146 12.8278 11.7367 12.8278 11.8923C12.8278 12.0478 12.95 12.17 13.1 12.17C13.1 12.17 13.9163 12.17 14.183 12.17C14.2107 12.2366 14.3163 12.5088 14.4718 12.8864L9.91209 12.8809L9.68991 12.4699L10.7562 12.3477C10.8618 12.3477 10.9506 12.2588 10.9506 12.1478C10.9506 12.0367 10.8617 11.9478 10.7562 11.9478H8.95678C8.84569 11.9478 8.76244 12.0367 8.76244 12.1478C8.76244 12.2588 8.72353 12.581 9.06234 12.5421L9.10678 12.5365L9.41784 13.1141L8.56256 14.6026C8.23491 14.4526 7.87388 14.3638 7.49063 14.3638C6.05775 14.3638 4.88588 15.5579 4.88588 17.0242C4.88588 18.4904 6.05222 19.69 7.48509 19.69C8.82909 19.69 9.93994 18.6459 10.0732 17.3074H11.7782C11.917 17.3074 12.0337 17.2519 12.1058 17.1518L14.7884 13.6807C14.9162 13.9973 15.055 14.3416 15.1882 14.6859C14.3719 15.1358 13.8164 16.0189 13.8164 17.0297C13.8164 18.4959 14.9828 19.6956 16.4156 19.6956C17.8485 19.6956 19.0204 18.5015 19.0204 17.0352C19.026 15.5633 17.8597 14.3693 16.4212 14.3693ZM7.49053 19.1289C6.35756 19.1289 5.43563 18.1848 5.43563 17.0184C5.43563 15.8577 6.36309 14.9136 7.49616 14.9136C7.77938 14.9136 8.046 14.9747 8.29041 15.0802L7.25728 16.8797C7.20731 16.963 7.20731 17.074 7.25728 17.1574C7.30725 17.2407 7.39613 17.2962 7.49053 17.2962H9.52884C9.39553 18.3348 8.52919 19.1346 7.49053 19.1289ZM7.96266 16.7464L8.75691 15.3635C9.17344 15.6967 9.46228 16.1855 9.52894 16.7464C8.87353 16.7464 8.2515 16.7464 7.96266 16.7464ZM10.0787 16.7464C10.001 15.98 9.60656 15.3135 9.02897 14.8803C9.30666 14.3971 9.56766 13.9417 9.72319 13.6751L11.3949 16.752C11.084 16.7464 10.5952 16.7464 10.0787 16.7464ZM11.9337 16.4131L10.2175 13.4418C11.1506 13.4418 13.5666 13.4473 14.283 13.4473C13.8608 13.9861 12.5002 15.6744 11.9337 16.4131ZM16.4212 19.1401C15.2883 19.1401 14.3607 18.1904 14.3663 17.0296C14.3663 16.252 14.7829 15.569 15.3994 15.2079C15.8104 16.241 16.1714 17.1407 16.1714 17.1407C16.2269 17.2851 16.388 17.3517 16.5268 17.2907C16.6657 17.2352 16.7323 17.0685 16.6768 16.9297L15.8993 14.9969C16.0658 14.9525 16.2436 14.9247 16.4213 14.9247C17.5543 14.9247 18.4762 15.8744 18.4762 17.0352C18.4817 18.1959 17.5542 19.1401 16.4212 19.1401ZM0.1875 6.60938C0.1875 7.89169 1.08984 8.98144 2.25 9.38212V21.9844H0.1875V23.6719H23.8125V21.9844H21.75V9.38006C22.9584 9.01022 23.7843 7.93669 23.8125 6.60938V5.85938H0.1875V6.60938ZM6.12094 6.54806C6.12094 7.15528 6.75422 9.49837 9.09534 9.49837C11.1287 9.49837 12.0205 7.65947 12.0205 6.54806C12.0205 7.58419 12.7152 9.49622 14.9703 9.49622C17.0077 9.49622 17.9106 7.52756 17.9106 6.54806C17.9106 7.90041 18.8224 9.02456 20.0625 9.375V21.9844H3.9375V9.38381C5.19394 9.04369 6.12094 7.91203 6.12094 6.54806ZM23.8125 5.20312H0.1875L3.1875 2.20312V0.328125H20.9062V2.20312H20.8905L23.8125 5.20312Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3388_5819'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-image: url(/img/Svgs/NavbarShopIcon.svg);
 }
 .homeButton:before{
     content:"sa";
@@ -141,7 +156,7 @@ li a{
     width: 24px;
     height: 24px;
     background: no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='22' viewBox='0 0 13 25' fill='none'%3E%3Cpath d='M11.9536 10.566V24.7093H1.39586V10.566H1V9.73635H1.79013L5.84732 2.70634V1.68253H5.71761V1H7.41076V1.68253H7.28103V2.70632L11.5137 9.73635H12.3332V10.566H11.9536ZM7.65981 20.9698V19.814C7.65981 19.4624 7.35664 19.1667 6.94545 19.0809V20.9698H7.65981ZM6.53938 20.9698V19.0663C6.08501 19.1264 5.7387 19.4382 5.7387 19.814V20.9698H6.53938ZM1.84084 24.2696H5.32696V19.5858C5.32696 18.9875 5.94133 18.5024 6.69918 18.5024C7.45704 18.5024 8.07141 18.9875 8.07141 19.5858V24.2696H11.5086V10.606H1.84084V24.2696ZM7.84993 8.61598V6.11068H5.41353V8.32645V8.61598V9.72542H7.84993V8.61598ZM6.46244 7.20906H5.66663V6.41287H6.46244V7.20906ZM6.46244 8.32645H5.66663V7.54353H6.46244V8.32645ZM6.46244 9.42482H5.66663V8.62863H6.46244V9.42482ZM7.59257 7.20906H6.79676V6.41287H7.59257V7.20906ZM7.59257 8.32645H6.79676V7.54353H7.59257V8.32645ZM7.59257 9.42482H6.79676V8.62863H7.59257V9.42482ZM8.54448 15.2402H10.9809V17.7455H8.54448V15.2402ZM9.9277 17.4693H10.7235V16.6731H9.9277V17.4693ZM9.9277 16.3386H10.7235V15.5424H9.9277V16.3386ZM8.79758 17.4693H9.59339V16.6731H8.79758V17.4693ZM8.79758 16.3386H9.59339V15.5424H8.79758V16.3386ZM8.54448 11.9166H10.9809V14.4219H8.54448V11.9166ZM9.9277 14.1456H10.7235V13.3494H9.9277V14.1456ZM9.9277 13.0149H10.7235V12.2188H9.9277V13.0149ZM8.79758 14.1456H9.59339V13.3494H8.79758V14.1456ZM8.79758 13.0149H9.59339V12.2188H8.79758V13.0149ZM10.9741 21.0897V22.1991H8.53772V21.0897V20.8001V18.5844H10.9741V21.0897ZM9.58663 18.8866H8.79082V19.6828H9.58663V18.8866ZM9.58663 20.0172H8.79082V20.8001H9.58663V20.0172ZM9.58663 21.1023H8.79082V21.8985H9.58663V21.1023ZM10.7168 18.8866H9.92095V19.6828H10.7168V18.8866ZM10.7168 20.0172H9.92095V20.8001H10.7168V20.0172ZM10.7168 21.1023H9.92095V21.8985H10.7168V21.1023ZM5.41316 15.3359H7.84956V17.8412H5.41316V15.3359ZM6.79638 17.5649H7.59219V16.7687H6.79638V17.5649ZM6.79638 16.4343H7.59219V15.638H6.79638V16.4343ZM5.66626 17.5649H6.46207V16.7687H5.66626V17.5649ZM5.66626 16.4343H6.46207V15.638H5.66626V16.4343ZM5.41316 11.9166H7.84956V14.4219H5.41316V11.9166ZM6.79638 14.1456H7.59219V13.3494H6.79638V14.1456ZM6.79638 13.0149H7.59219V12.2188H6.79638V13.0149ZM5.66626 14.1456H6.46207V13.3494H5.66626V14.1456ZM5.66626 13.0149H6.46207V12.2188H5.66626V13.0149ZM2.46024 15.2402H4.89664V17.7455H2.46024V15.2402ZM3.84346 17.4693H4.63927V16.6731H3.84346V17.4693ZM3.84346 16.3386H4.63927V15.5424H3.84346V16.3386ZM2.71333 17.4693H3.50915V16.6731H2.71333V17.4693ZM2.71333 16.3386H3.50915V15.5424H2.71333V16.3386ZM2.46024 11.9166H4.89664V14.4219H2.46024V11.9166ZM3.84346 14.1456H4.63927V13.3494H3.84346V14.1456ZM3.84346 13.0149H4.63927V12.2188H3.84346V13.0149ZM2.71333 14.1456H3.50915V13.3494H2.71333V14.1456ZM2.71333 13.0149H3.50915V12.2188H2.71333V13.0149ZM4.89048 21.0897V22.1991H2.45408V21.0897V20.8001V18.5844H4.89048V21.0897ZM3.50299 18.8866H2.70718V19.6828H3.50299V18.8866ZM3.50299 20.0172H2.70718V20.8001H3.50299V20.0172ZM3.50299 21.1023H2.70718V21.8985H3.50299V21.1023ZM4.63311 18.8866H3.83731V19.6828H4.63311V18.8866ZM4.63311 20.0172H3.83731V20.8001H4.63311V20.0172ZM4.63311 21.1023H3.83731V21.8985H4.63311V21.1023Z' fill='white' stroke='white' stroke-width='0.102564'/%3E%3C/svg%3E");
+    background-image: url(/img/Svgs/NavBarHomeIcon.svg);
 }
 .safetyButton::before{
     content:"sas";
@@ -149,15 +164,16 @@ li a{
     width: 24px;
     height: 24px;
     margin-right: 3px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19.9954 22.0506C19.9381 22.8092 19.2797 23.3674 18.5212 23.3101C18.2779 23.2957 18.106 23.2099 17.8913 23.1097C17.8913 23.1097 13.9982 20.4619 13.7692 20.2758C13.3827 19.9466 12.9963 19.5601 12.8245 19.0019C12.7673 18.8016 11.98 16.125 11.98 16.125L11.6266 23.625H3.72619L3.91706 20.6049H2.04675C0.916031 20.6049 0 19.6889 0 18.5582C0 18.2862 0.0429375 18.0286 0.143156 17.7996C0.143156 17.7996 2.26153 13.0477 2.66231 12.2747C3.24919 11.1153 4.27969 10.6144 5.72531 10.6573H9.54694L1.54584 16.3969L0.830156 18.0715C0.758625 18.2147 0.729938 18.3864 0.729938 18.5582C0.729938 19.2739 1.31681 19.8607 2.03241 19.8607H8.688C9.81872 19.8607 10.7347 18.9446 10.7347 17.8139C10.7347 16.812 10.0191 15.9675 9.07444 15.7958L11.021 10.6287H11.479C12.5525 10.6287 13.397 11.3587 13.6403 12.1888L15.1718 17.7137C15.2004 17.7996 15.3007 17.9713 15.4295 18.0715C15.5869 18.186 19.4658 20.8483 19.4658 20.8483C19.8236 21.1202 20.0383 21.5639 19.9954 22.0506ZM8.24438 9.71269C9.91903 9.8415 11.3789 8.59631 11.5077 6.92166C11.6365 5.247 10.3913 3.78712 8.71669 3.65831C7.04203 3.5295 5.58206 4.77469 5.45325 6.44925C5.32444 8.12391 6.56972 9.58387 8.24438 9.71269ZM9.99056 17.7996C9.99056 17.1268 9.47531 16.583 8.83116 16.5113L7.88653 19.1164L8.68809 19.102C9.40369 19.102 9.99056 18.5152 9.99056 17.7996ZM23.625 4.20647C23.625 5.34431 22.7156 6.27094 21.6037 6.27094C20.4917 6.27094 19.5866 5.34 19.5866 4.20216C19.5866 3.41775 20.0176 2.73244 20.6512 2.38341C20.5478 2.11622 20.4399 1.84894 20.3408 1.60331L18.2591 4.29703C18.2031 4.37466 18.1126 4.41769 18.0049 4.41769H16.6817C16.5783 5.45634 15.7162 6.26663 14.6733 6.26663C13.5613 6.26663 12.6562 5.33569 12.6562 4.19784C12.6562 3.06 13.5656 2.13338 14.6776 2.13338C14.975 2.13338 15.2551 2.20237 15.5094 2.31872L16.1732 1.16363L15.9319 0.715406L15.8974 0.719719C15.6345 0.749906 15.6646 0.499875 15.6646 0.413719C15.6646 0.327563 15.7293 0.258563 15.8154 0.258563H17.2118C17.2937 0.258563 17.3627 0.327563 17.3627 0.413719C17.3627 0.499875 17.2937 0.568875 17.2118 0.568875L16.3843 0.663656L16.5567 0.982594L20.0951 0.986906C19.9745 0.693844 19.8925 0.482625 19.871 0.430969C19.6641 0.430969 19.0305 0.430969 19.0305 0.430969C18.9142 0.430969 18.8193 0.336187 18.8193 0.215437C18.8193 0.0946875 18.9142 0 19.0306 0H20.0133C20.0994 0 20.1728 0.05175 20.2073 0.133594L21.0434 2.22394C21.2201 2.16788 21.4098 2.13778 21.608 2.13778C22.7243 2.13769 23.6293 3.06431 23.625 4.20647ZM16.2593 4.40906H14.6776C14.6043 4.40906 14.5354 4.36594 14.4966 4.30134C14.4578 4.23666 14.4578 4.1505 14.4966 4.08581L15.2982 2.68941C15.1086 2.60756 14.9017 2.56013 14.6819 2.56013C13.8027 2.56013 13.0829 3.29278 13.0829 4.19362C13.0829 5.09869 13.7983 5.83144 14.6776 5.83144C15.4836 5.83566 16.1559 5.21503 16.2593 4.40906ZM16.2593 3.98241C16.2076 3.54713 15.9835 3.16781 15.6603 2.90925L15.044 3.98241C15.268 3.98241 15.7507 3.98241 16.2593 3.98241ZM17.7075 3.98662L16.4102 1.59891C16.2895 1.80581 16.0869 2.15916 15.8714 2.53416C16.3196 2.87034 16.6256 3.38756 16.686 3.98231C17.0869 3.98241 17.4661 3.98241 17.7075 3.98662ZM19.9486 1.42228C19.3927 1.42228 17.5178 1.41797 16.7937 1.41797L18.1254 3.72375C18.5651 3.15056 19.621 1.84031 19.9486 1.42228ZM23.2027 4.20647C23.2027 3.30572 22.4872 2.56866 21.608 2.56866C21.4701 2.56866 21.3322 2.59022 21.2029 2.62472L21.8063 4.12453C21.8494 4.23225 21.7976 4.36153 21.6899 4.40466C21.5822 4.45209 21.4572 4.40034 21.4141 4.28831C21.4141 4.28831 21.134 3.59006 20.815 2.7885C20.3366 3.06862 20.0134 3.59878 20.0134 4.20216C20.0091 5.10291 20.7288 5.83997 21.6081 5.83997C22.4872 5.83997 23.207 5.10722 23.2027 4.20647Z' fill='white'/%3E%3C/svg%3E");
+    background-image: url(/Img/Svgs/NavBarSafetyIcon.svg);
 }
 .rulesButton::before{
     content:"sas";
     color: transparent;
     width: 24px;
     height: 24px;
+    padding-bottom: 2px;
     background: no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 0C5.38667 0 0 5.38667 0 12C0 18.6133 5.38667 24 12 24C18.6133 24 24 18.6133 24 12C24 5.38667 18.6133 0 12 0ZM12 21.52C6.77333 21.52 2.48 17.2533 2.48 12C2.48 6.74667 6.74667 2.48 12 2.48C17.2267 2.48 21.52 6.74667 21.52 12C21.52 17.2267 17.2267 21.52 12 21.52Z' fill='white'/%3E%3Cpath d='M19.0933 12.7999C18.6133 11.3333 17.04 10.5599 15.5733 11.0133L14.7733 9.19995L14.9867 8.63995H15.6267V8.07995H13.2533C13.12 8.07995 13.04 8.31995 13.2267 8.34661L14.4 8.61328L14.1867 9.17328H9.22666L9.44 8.45328C9.6 7.91995 10.4533 8.05328 10.88 8.05328V7.49328C10.1333 7.49328 9.17333 7.35995 8.90666 8.29328L8.10666 10.9066C6.8 10.6399 5.52 11.3333 4.98666 12.5333C4.4 13.9466 5.04 15.5733 6.45333 16.1866C7.86666 16.7733 9.49333 16.1333 10.1067 14.7199C10.6933 13.3066 10.0533 11.6799 8.61333 11.0666L8.82666 10.3466L11.3867 13.1733C11.3867 13.1999 11.3867 13.2266 11.3867 13.2799C11.3867 13.7599 11.76 14.1333 12.24 14.1333C12.2667 14.1333 12.2667 14.1333 12.2933 14.1333L12.56 14.6399L12.2933 14.7999L12.48 15.1466L13.4133 14.6399L13.2267 14.2933L12.9067 14.4799L12.7467 14.1599H13.7333C14.0533 15.7599 15.7333 16.7733 17.3333 16.2399C18.7733 15.8399 19.5733 14.2666 19.0933 12.7999ZM9.57333 14.5866C9.06666 15.7066 7.73333 16.2133 6.64 15.7066C5.52 15.1999 5.01333 13.8933 5.52 12.7733C5.94666 11.8666 6.93333 11.3333 7.92 11.5199L7.28 13.5999C7.17333 13.9466 7.70666 14.1066 7.81333 13.7599L8.48 11.6533C9.6 12.1599 10.08 13.4666 9.57333 14.5866ZM11.3333 12.3199L11.3867 12.2933L11.52 12.5333L11.3333 12.3199ZM12.2667 12.4799C12.16 12.4799 12.0533 12.5066 11.9467 12.5333L11.7333 12.1333L12 11.9733L11.8133 11.6266L11.0667 12.0266L9.04 9.75995H13.9733L12.88 12.6933C12.72 12.5599 12.5067 12.4799 12.2667 12.4799ZM13.68 13.6799H13.12L14.5067 9.97328L15.0667 11.2533C14.2133 11.7599 13.68 12.6666 13.68 13.6799ZM15.3067 11.7599L16.16 13.6533H14.24C14.2133 12.8799 14.64 12.1599 15.3067 11.7599ZM17.0667 15.8133C15.92 16.1599 14.5067 15.4399 14.2667 14.2399H16.56C16.7467 14.2399 16.9067 14.0266 16.8267 13.8399L15.7867 11.5466C16.96 11.1999 18.2133 11.8666 18.56 13.0399C18.9333 14.2133 18.2667 15.4666 17.0667 15.8133Z' fill='white'/%3E%3Cpath d='M11.3333 12.32L11.52 12.5333L11.3867 12.2933L11.3333 12.32Z' fill='white'/%3E%3C/svg%3E");
+    background-image: url(/img/Svgs/NavBarRulesIcon.svg)
 }
 .repairsButton::before{
     content:"sas";
@@ -165,9 +181,9 @@ li a{
     margin-right: 3px;
     width: 24px;
     height: 25px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18.8683 21.4282H18.1136C17.9052 21.4282 17.7362 21.6198 17.7362 21.8568C17.7362 22.0938 17.9052 22.2853 18.1136 22.2853H18.8683C19.0762 22.2853 19.2456 22.4773 19.2456 22.7139C19.2456 22.9505 19.0762 23.1425 18.8683 23.1425H15.6482L16.6282 20.3097V20.3088L19.046 13.3198C19.1222 13.0995 19.0268 12.851 18.8328 12.7644C18.6388 12.6787 18.4196 12.7863 18.3437 13.0065L16.6211 17.9864L12.3817 11.3202C12.3127 11.2113 12.2059 11.1564 12.0957 11.15C12.0893 11.1474 12.0851 11.1427 12.0757 11.1427H9.79226C9.59829 8.27095 7.48354 6 4.90575 6C2.2008 6 0 8.49937 0 11.5713C0 14.6432 2.2008 17.1426 4.90575 17.1426C5.34123 17.1426 5.76124 17.0715 6.16351 16.9502L7.12466 20.0684L6.22653 21.4282H4.90575C4.69745 21.4282 4.52839 21.6198 4.52839 21.8568C4.52839 22.0938 4.69745 22.2853 4.90575 22.2853H8.67941C8.88772 22.2853 9.05678 22.0938 9.05678 21.8568C9.05678 21.6198 8.88772 21.4282 8.67941 21.4282H7.16995L7.736 20.5711H15.7271L14.7433 23.4146C14.6976 23.5466 14.7124 23.6953 14.7825 23.8127C14.8527 23.9297 14.9697 24 15.0942 24H18.8679C19.4921 24 20 23.4232 20 22.7143C20 22.0055 19.4921 21.4286 18.8679 21.4286L18.8683 21.4282ZM4.90575 16.2855C2.61703 16.2855 0.754731 14.1705 0.754731 11.5713C0.754731 8.97207 2.61703 6.85712 4.90575 6.85712C7.0673 6.85712 8.8462 8.74365 9.03753 11.1427H7.92468C7.71637 11.1427 7.54731 11.3343 7.54731 11.5713C7.54731 11.8083 7.71637 11.9999 7.92468 11.9999H9.03753C8.90055 13.7175 7.94883 15.1686 6.62579 15.8565L5.86992 13.4034C6.41974 13.0284 6.79258 12.3513 6.79258 11.5717C6.79258 10.3902 5.94615 9.42892 4.90575 9.42892C3.86536 9.42892 3.01892 10.3902 3.01892 11.5717C3.01892 12.7533 3.86536 13.7145 4.90575 13.7145C4.99179 13.7145 5.07444 13.6982 5.15746 13.6858L5.9137 16.1398C5.59029 16.2319 5.25406 16.2863 4.90575 16.2863V16.2855ZM5.27746 12.7777C5.27482 12.7786 5.27331 12.7811 5.27104 12.782C5.15595 12.827 5.03406 12.8566 4.90575 12.8566C4.28159 12.8566 3.77366 12.2797 3.77366 11.5709C3.77366 10.862 4.28159 10.2852 4.90575 10.2852C5.52992 10.2852 6.03785 10.862 6.03785 11.5709C6.03785 12.1267 5.72388 12.5968 5.28802 12.776C5.28463 12.7773 5.28085 12.776 5.27746 12.7777ZM9.79226 11.9999H11.4093L7.6375 19.1384L6.87673 16.6695C8.49261 15.8603 9.65113 14.0904 9.79226 11.9999ZM8.21374 19.714L12.1048 12.3491L16.2931 18.9348L16.0237 19.714H8.21374Z' fill='white'/%3E%3Cpath d='M18.5 0C15.4671 0 13 2.69143 13 6C13 9.30857 15.4671 12 18.5 12C21.5329 12 24 9.30857 24 6C24 2.69143 21.5329 0 18.5 0ZM18.5 11.1429C15.9005 11.1429 13.7857 8.83586 13.7857 6C13.7857 3.16414 15.9005 0.857143 18.5 0.857143C21.0995 0.857143 23.2143 3.16414 23.2143 6C23.2143 8.83586 21.0995 11.1429 18.5 11.1429Z' fill='white'/%3E%3Cpath d='M21.6318 3.84938C21.5738 3.72653 21.4683 3.64212 21.3477 3.62223C21.2278 3.60323 21.1052 3.64875 21.0186 3.74686L19.7319 5.21756C19.5857 5.3846 19.3305 5.38372 19.1851 5.21756C19.1121 5.13448 19.0719 5.02312 19.0719 4.90512C19.0719 4.78713 19.1121 4.67577 19.1848 4.59269L20.4715 3.12198C20.5577 3.02299 20.5983 2.88379 20.5809 2.74547C20.5631 2.60759 20.4897 2.48695 20.3822 2.42066C19.1886 1.68354 17.6842 1.93278 16.7241 3.03006C15.9451 3.92097 15.6446 5.23303 15.9257 6.44256L15.1134 7.37103C14.9622 7.54382 14.9622 7.82311 15.1134 7.9959C15.2646 8.16869 15.5089 8.16869 15.6601 7.9959L16.6372 6.87962C16.7427 6.75941 16.7779 6.57999 16.728 6.41914C16.4295 5.45841 16.6426 4.3735 17.2705 3.65538C17.8605 2.98145 18.7243 2.73265 19.5103 2.97085L18.6377 3.96826C18.4188 4.21838 18.2982 4.55115 18.2982 4.90557C18.2982 5.25998 18.4188 5.59275 18.6377 5.84287C19.09 6.35992 19.8258 6.35948 20.2782 5.84287L21.1508 4.84546C21.3585 5.743 21.1416 6.73113 20.5515 7.40506C19.9236 8.12273 18.9744 8.36755 18.1339 8.02507C17.9931 7.96718 17.8361 8.00872 17.731 8.12892L16.7539 9.24565C16.6027 9.41844 16.6027 9.69773 16.7539 9.87052C16.8293 9.95669 16.9283 10 17.0273 10C17.1263 10 17.2252 9.95669 17.3006 9.87052L18.113 8.94161C19.1701 9.26421 20.3192 8.91995 21.0983 8.02949C22.0583 6.93309 22.2775 5.21358 21.6314 3.84894L21.6318 3.84938Z' fill='white'/%3E%3C/svg%3E");
+    background-image: url(/img/Svgs/NavBarDIWhyIcon.svg)
 }
-li a:hover, :focus, #active{
+li a:hover, :focus, #activeNav, #activeFooter{
     background-color: var(--BronzeColor-color);
     backdrop-filter: blur(10px);
     border-bottom:var(--accentDarkBrownish-color) 5px;
@@ -181,8 +197,76 @@ li a:hover, :focus, #active{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/Central\ back.jpg);
 }
+    
+#heroImageHome{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/CentralBack.jpg);
+}
+#heroImageShopping{
+    background-position: center 30%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/ShopingBanner.jpg);
+}
+#heroImageSafety{
+    background-position: center 43%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/SafetyBanner.jpg);
+}
+#heroImageRules{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/Img/RulesBanner.jpg);
+}
+#heroImageRepairs{
+    background-position: center 30%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/Img/windmill.jpg);
+}
+#heroImageContactUs{
+    background-position: center 30%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/Img/Contactusbanner2.jpg);
+
+}
+
+
+.heroMobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.heroTextMobile{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--mainColor-color);
+    margin-bottom: 20px;
+
+}
+#imageHeroMobile{
+    width: 100vw;
+    height: 400px;
+    
+}
+#imageHeroMobile3{
+    width: 100vw;
+    height: 400px;
+}
+#imageHeroMobile4{
+    width: 100vw;
+    height: 400px;
+}
+#imageHeroMobile5{
+    width: 100vw;
+    height: 400px;
+}
+#imageHeroMobile6{
+    width: 100vw;
+    height: 400px;
+}
+
+
+
+
 
 .hero-text{
     position: absolute;
@@ -197,6 +281,7 @@ li a:hover, :focus, #active{
     transform: translate(-100%, -39%);
     color: white;
 }
+
     
 .CTAButtons{
     margin-top: 25px;
@@ -228,7 +313,7 @@ li a:hover, :focus, #active{
 .CTAButtons:hover{
     background-color: transparent;
     box-shadow: -5px -5px 0 0 black;
-    scale: 0.95;
+    
 }
 .CTAButtons:hover::after{
     opacity: 1;
@@ -241,13 +326,21 @@ li a:hover, :focus, #active{
     text-align: center;
     color: var(--mainColor-color);
 }
+#shopbuttons{
+    display: flex;
+    flex-direction: column;
+
+}
 
 .sectioncentring{
     width: 80%;    
 }
+.sectioncentring header:nth-child(2){
+    max-width: 100vw;
+}
 .sectioncentring a{
     float: left;
-    margin: 23px 0;
+    
     color: black;
     text-decoration: underline;
     font-family: "Alata", sans-serif;
@@ -300,15 +393,19 @@ li a:hover, :focus, #active{
 .mission p{
     margin-bottom: 45px;
 }
+figcaption{
+    font-size: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    color: var(--mainColor-color);
+}
 
 .infoCardPic{
     width: 335px;
     height: 333.33px;
     border-radius: 10px;
+    
 } 
-#rotatePic{
-    rotate: -90deg;
-}
 .mission-section__body{
     display: flex;
     align-content: center;
@@ -324,7 +421,6 @@ li a:hover, :focus, #active{
     height: 95px;
     z-index: -1;
     background-repeat: no-repeat;
-   
 }
 .infoCard{
     position: relative;
@@ -357,23 +453,18 @@ li a:hover, :focus, #active{
 }
 /* contentpages locations top: -75px;
     left: 150px;*/
-    
-img{
-    animation: gog 5s infinite linear;
-}
-@keyframes gog {
-    from{
-      transform: rotate(0deg)
+    /*img{
+        animation: gog 5s infinite linear;
     }
-    to{
-        transform rotate(360deg)
-    }
-
-    
-}
-
-      
-      
+    @keyframes gog {
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }  */
 #svgHomePage1{
     bottom:  140px;
     left: 140px;
@@ -393,18 +484,18 @@ img{
 #svgHomePage4{
     bottom:  140px;
     left: 145px;
-    background-image:  url(/Img/Svgs/Spinni\ boy.svg);
+    background-image:  url(/Img/Svgs/SpinniBoy.svg);
 }
 /*Shop page InfoCard Svgs*/
 
-#svgShopPageOdd{
+#shopP1, #shopP3, #shopP5{
     top: -115px;
     width: 95px;
     left: 140px;
     background-image: url(/Img/Svgs/Wheel.svg);
     background-color: rgba(255, 255, 255, 0);
 }
-#svgShopPageEven{
+#shopP2, #shopP4, #shopP6, #shopP8{
     top: -115px;
     width: 95px;
     left: 140px;
@@ -419,7 +510,7 @@ img{
     background-color: rgba(255, 255, 255, 0);
 }
 /*Safety Page Svgs*/
-#safety{
+#safety1, #safety2, #safety3, #safety4, #safety5, #safety6{
     top: -115px;
     width: 95px;
     left: 140px;
@@ -427,32 +518,137 @@ img{
     background-color: rgba(255, 255, 255, 0);
 }
 /*Rules Svgs*/
-#rulesSvg{
+#rules1, #rules2, #rules3, #rules4, #rules5, #rules6, #rules7, #rules8{
     top: -115px;
     width: 95px;
     left: 140px;
-    background-image: url(/Img/Svgs/Oatly.svg);
+    background-image: url(/Img/Svgs/Rules.svg);
     background-color: rgba(255, 255, 255, 0);
 }
 
 /*Repairs Svgs*/
+#repairs1, #repairs2, #repairs3, #repairs4, #repairs5, #repairs6, #repairs7{
+    top: -115px;
+    width: 95px;
+    left: 140px;
+    background-image: url(/Img/Svgs/SpinniBoy.svg);
+    background-color: rgba(255, 255, 255, 0);
+}
 
+/* Contact page */
 .contactInfo{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    
 }
 .contactInfoContent{
+    position: relative;
+    margin-bottom: 45px;
     margin-top: 45px;
     width: 400px;
     height: 700px;
+    padding: 20px;
     border-radius: 10px 0 0 10px;
     background-color: var(--infocardBlue-color);
 }
+.contactInfoContent h2{
+    color: var(--mainColor-color);
+    text-align: center;
+}
+#animatedLogo{
+    position: absolute;
+    z-index: -1;
+    width: 429px;
+    height: 320px;
+    top: 375px;
+}
+.stroopwheels{
+    width: 110px;
+    height: 110px;
+}
+#frontWheel{
+    position: absolute;
+    top: 512px;
+    left: 270px;
+    z-index: -2;
+}
+#backWheel{
+    position: absolute;
+    top: 513px;
+    left: 76px;
+    z-index: -2;
+}
 
-
-
-footer{
+legend h2{
+    color: var(--mainColor-color);
+}
+legend{
+    padding: 20px;
+    
+}
+.forms{
+    margin-bottom: 45px;
+    border-style: solid;
+    border-color: var(--infocardBlue-color);
+    border-width: 2px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 400px;
+    height: 700px;
+}
+label, input, textarea{
+  display: block;
+  background-color: white;
+}
+label{
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--mainColor-color);
+    margin-top: 25px;
+}
+label:nth-child(2){
+    margin-top: 0;
+}
+#title, #fname, #lname, #message, #phoneNumber, #email{
+    border-radius: 10px;
+    padding: 5px;
+}
+#message{
+    width: 50%;
+}
+
+
+#submitbutton{
+    margin-top: 25px;
+    padding: 10px;
+    background-color: var(--mainColor-color);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    font-family: "Alata", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+#submitbutton::before{
+    content:"saS";
+    color: transparent;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    padding-bottom: 3px;
+    background-size: cover;
+    background-image: url(/Img/Svgs/Instagram.svg);
+}
+
+/* footer */
+footer{
     display: grid;
     grid-template-rows: 50% 30% 20%;
     grid-template-columns: 80% 20%;
@@ -526,6 +722,50 @@ aside a{
     grid-row:3;
     color: white;
 }
+strong{
+    font-size: 20px;
+}
+.popWrap{
+    position: absolute;
+    bottom: 0;
+            left: 70%;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.popWrap:target{
+    
+    border: solid red 2px;
+}
+.popUp{
+    position: relative;
+    padding: 5px;
+    width: 95px;
+    height: 36px;
+    background-color: var(--mainColor-color);
+}
+.popUp p{
+    color: white;
+    text-indent: 0;
+}
+.close{
+    position: absolute; 
+    top: -20px; 
+    right: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+    color: black
+}
+.close:hover{
+    color: orange;
+}
+
+@media only screen and (min-width: 769px){
+    .heroMobile{
+        display: none;
+    }
+}
 @media only screen and (max-width: 768px){
     .hero-text h2{
         font-size: 1.4em;
@@ -542,7 +782,20 @@ aside a{
     .socials-list{
         flex-direction: row;
         justify-content: space-evenly;
+        margin-top: 20px;
     }
+    .contactInfoContent{
+        margin-bottom: 0;
+        border-radius: 10px;
+    }
+    .forms{
+        margin-top: 0;
+        border-radius: 10px;
+        
+    }
+    .hero-image{
+        display: none;
+    }
+    
 }
 
-}

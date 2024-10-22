@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milen Savov">
     <title>Fietsgang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleAnimations.css" />
 </head>
 <body>
     <header class="logo">
-        <img class="logopic" src="Img/Get to da waffle.png" alt="">
+        <img class="logopic" src="Img/Logopic.png" alt="logopic" title="Bike with Stroopwaflewheels">
         <h1>Fietsgang</h1>
     </header>
+
+    <article id="pop" class="popWrap">
+        <aside class="popUp">
+        <a class="close" href="#pop">x</a>
+        <p>
+            <strong>Cookies?</strong>
+        </p>
+    </aside>
+    </article>
+
     <header class="navbartop">
         <nav>
             <ul> 
-                <li><a id="active" class="homeButton" href="/index.html">Home</a></li>
-                <li><a class="shoppingButton" href="/Shopping page.html">Find Your First Bike</a></li>
+                <li><a id="activeNav" class="homeButton" href="/index.html">Home</a></li>
+                <li><a class="shoppingButton" href="/ShoppingPage.html">Find Your First Bike</a></li>
                 <li><a class="safetyButton" href="/SafetyPage.html">Learn Cycling Safety Tips</a></li>
                 <li><a class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
-                <li><a class="repairsButton" href="Repairs page.html">Easy DIY Fixes</a></li>
+                <li><a class="repairsButton" href="RepairsPage.html">Easy DIY Fixes</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="hero-image">
+    <section>
+        <article id="heroImageHome" class="hero-image">
             <article class="hero-text">
                 <h2>Pedal into Your New Adventure: <em>Cycling in Amsterdam Made Easy!</em></h2>
-                <a href="/Shopping page.html" class="CTAButtons">Find Your First Bike</a><a href="" class="CTAButtons">Contact Us</a>
+                <a href="/ShoppingPage.html" class="CTAButtons">Find Your First Bike</a><a href="/ContactPage.html" class="CTAButtons">Contact Us</a>
             </article>
         </article>
-    </article>
+    
+        <article class="heroMobile">
+            <article class="heroTextMobile">
+                <img id="imageHeroMobile" src="/Img/CentralBack.jpg" alt="CentraalStation">
+                <h2>Pedal into Your New Adventure: <em>Cycling in Amsterdam Made Easy!</em></h2>
+                <a href="/ShoppingPage.html" class="CTAButtons">Find Your First Bike</a><a href="/ContactPage.html" class="CTAButtons">Contact Us</a>
+            </article>
+        </article>
+    </section>
+    
+   
 
        <section class="welcome-section">
         <article class="sectioncentring">
@@ -62,48 +85,50 @@
                 by sharing our mistakes so you don’t have to repeat them. </p>
             </article>
         </article>
+       </section>
     
         <section class="mission-section__body">
             <article class="infoCard">
                 <header id="svgHomePage1" class="svgBackground"></header>
-                <img class="infoCardPic" src="/Img/Bike Shop.jpg" alt="buying a bike">
+                <figure><figcaption>Popular bike shop in Amsterdam:</figcaption><img class="infoCardPic" src="/Img/BikeShop.jpg" alt="AmsterdamBikeShop" title="MacBike"></figure>
             <p>We are here to guide in the process of buying your first bike in Amsterdam.
             </p>
             </article>
             <article class="infoCard">
                 <header id="svgHomePage2" class="svgBackground"></header>
-                <img class="infoCardPic" src="/Img/Sign.jpg" alt="red traffic sign">
+                <figure><figcaption>No Bicycle Parking Area:</figcaption><img class="infoCardPic" src="/Img/Sign.jpg" alt="NoparkingZone" title="NoparkingZoneSign"></figure>
                 <p>We explain all the written and unwritten rules, to help you avoid
                 the dreaded blue letters in the mailbox.
             </p>
             </article>
             <article class="infoCard">
                 <header id="svgHomePage3" class="svgBackground"></header>
-                <img class="infoCardPic" src="Img/Trafic light final.webp" alt="safety">
+                <figure><figcaption>Amsterdam Traffic Light:</figcaption><img class="infoCardPic" src="Img/TrafficLifgtFinal.webp" alt="safety" title="AmsTrafficLight"></figure>
             <p>Inform you about best safety practices for both expert and novice riders,
                 because riding in Amsterdam is a wild experience like no else.
             </p>
             </article>
-        </article>
+        
             <article class="infoCard">
                 <header id="svgHomePage4" class="svgBackground"></header>
-                <img id="rotatePic" class="infoCardPic" src="Img/Broken bike.jpg" alt="repair">
+                <figure><figcaption>Bike with a Flat Tire:</figcaption><img id="rotatePic" class="infoCardPic" src="Img/BrokenBike.jpg" alt="repair" title="BrokenDownBike"></figure>
             <p id="noppmargin">We aim to teach you how do easy repairs on common issues with
                 inexpesive tools and materials to keep you rolling and bring down
                 the cost of ownership.
             </p>
+            </article>
            
         </section>
-       </section>
+       
     
        <footer>
         <nav class="nav-bottom">
             <ul>
-                <li><a id="active" class="homeButton" href="/index.html">Home</a></li>
-                <li><a class="shoppingButton" href="/Shopping page.html">Find Your First Bike</a></li>
+                <li><a id="activeFooter" class="homeButton" href="/index.html">Home</a></li>
+                <li><a class="shoppingButton" href="/ShoppingPage.html">Find Your First Bike</a></li>
                 <li><a class="safetyButton" href="/SafetyPage.html">Learn Cycling Safety Tips</a></li>
                 <li><a class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
-                <li><a class="repairsButton" href="Repairs page.html">Easy DIY Fixes</a></li>
+                <li><a class="repairsButton" href="RepairsPage.html">Easy DIY Fixes</a></li>
             </ul>
         </nav>
         <aside class="side-socials">
@@ -113,7 +138,7 @@
                 <li><a id="reddit" class="socials-items" href="https://www.reddit.com/r/bikewrench/">Reddit</a></li>
             </ul>
         </aside>
-        <p class="rights">&copy; 2024. All Rights Reserved.<p>
+        <p class="rights">&copy; 2024. All Rights Reserved.</p>
        </footer>
     </main>
 </body>

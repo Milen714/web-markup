@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milen Savov">
     <title>Safety Tips</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleAnimations.css" />
 </head>
 <body>
     <header class="logo">
-        <img class="logopic" src="Img/Get to da waffle.png" alt="">
+        <img class="logopic" src="Img/Logopic.png" alt="logopic" title="Bike with Stroopwaflewheels">
         <h1>Fietsgang</h1>
     </header>
     <header class="navbartop">
         <nav>
             <ul> 
                 <li><a class="homeButton" href="/index.html">Home</a></li>
-                <li><a class="shoppingButton" href="/Shopping page.html">Find Your First Bike</a></li>
+                <li><a class="shoppingButton" href="/ShoppingPage.html">Find Your First Bike</a></li>
                 <li><a class="safetyButton" href="/SafetyPage.html">Learn Cycling Safety Tips</a></li>
                 <li><a class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
-                <li><a id="active" class="repairsButton" href="Repairs page.html">Easy DIY Fixes</a></li>
+                <li><a class="repairsButton" href="RepairsPage.html">Easy DIY Fixes</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="hero-image">
+    <section>
+        <article id="heroImageContactUs" class="hero-image">
             <article class="hero-text">
                 <h2>Share Your Cycling Story – <em>We’d Love to Hear About Your Adventures in Amsterdam!</em></h2>
-               <a href="" class="CTAButtons">Contact Us</a>
+                <a href="/ContactPage.html" id="cTaActiv" class="CTAButtons">Contact Us</a>
             </article>
         </article>
-    </article>
+
+        <article class="heroMobile">
+            <article class="heroTextMobile">
+                <img id="imageHeroMobile6" src="/Img/Contactusbanner2.jpg" alt="Dappermarkt">
+                <h2>Share Your Cycling Story – <em>We’d Love to Hear About Your Adventures in Amsterdam!</em></h2>
+                <a href="/ContactPage.html" class="CTAButtons">Contact Us</a>
+            </article>
+        </article>
+    </section>
+    
 
     <section class="contactInfo">
         <article class="contactInfoContent">
@@ -41,9 +53,45 @@
             <p>We’re excited to hear about your cycling experiences in Amsterdam! Whether you’ve discovered 
                 a hidden gem, encountered an unexpected adventure, or simply have tips to share with fellow riders, 
                 your stories help us create a more connected community. Reach out to us and let’s celebrate the joys 
-                of biking in this incredible city together!</p>
+                of biking in this incredible city together!
+            </p>
+        <header>
+            <img id="animatedLogo" src="/Img/NoWheels.png" alt="AnimatedLogo" title="BikewithStroopWheels">
+            <img id="frontWheel" class="stroopwheels" src="/Img/Stroop.png" alt="Stroopwaflewheels" title="FrontStroopWheel">
+            <img id="backWheel" class="stroopwheels" src="/Img/Stroop.png" alt="Stroopwaflewheels" title="BackStroopWheel">
+        </header>
         </article>
-        <article></article>
+        <article class="forms">
+            <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
+                <legend><h2>Spill the beans with us:</h2></legend>
+                <label for="title">Title:</label>
+            <select name="title" id="title">
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss.">Miss.</option>
+                <option value="Dr.">Dr.</option>
+            </select>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Ferry" required>
+
+                <label for="lname">Surname:</label>
+                <input type="text" id="lname" name="lname" placeholder="Bouman" required>
+
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+31 6 86694208">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email@gmail.com" required>
+
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+
+                <input id="submitbutton" type="submit" value="Submit">
+            </form>
+        </article>
     </section>
        
       
@@ -51,10 +99,10 @@
         <nav class="nav-bottom">
             <ul>
                 <li><a class="homeButton" href="/index.html">Home</a></li>
-                <li><a class="shoppingButton" href="/Shopping page.html">Find Your First Bike</a></li>
+                <li><a class="shoppingButton" href="/ShoppingPage.html">Find Your First Bike</a></li>
                 <li><a class="safetyButton" href="/SafetyPage.html">Learn Cycling Safety Tips</a></li>
                 <li><a class="rulesButton" href="/RulesPage.html">Rules to Follow</a></li>
-                <li><a id="active" class="repairsButton" href="Repairs page.html">Easy DIY Fixes</a></li>
+                <li><a class="repairsButton" href="RepairsPage.html">Easy DIY Fixes</a></li>
             </ul>
         </nav>
         <aside class="side-socials">

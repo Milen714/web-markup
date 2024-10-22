@@ -1,0 +1,15 @@
+#svgHomePage1, #svgHomePage4, #shopP1, #shopP3, #shopP5, #shopP2, #shopP4, #shopP6, #shopP8, 
+#repairs1, #repairs2, #repairs3, #repairs4, #repairs5, #repairs6, #repairs7,
+#frontWheel, #backWheel{
+    animation: gog 5s infinite linear;
+}
+@keyframes gog {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
