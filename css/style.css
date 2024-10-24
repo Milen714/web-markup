@@ -148,7 +148,7 @@ li a{
     height: 24px;
     margin-right: 3px;
     background: no-repeat;
-    background-image: url(/img/Svgs/NavbarShopIcon.svg);
+    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavbarShopIcon.svg);
 }
 .homeButton:before{
     content:"sa";
@@ -157,7 +157,7 @@ li a{
     width: 24px;
     height: 24px;
     background: no-repeat;
-    background-image: url(/img/Svgs/NavBarHomeIcon.svg);
+    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavBarHomeIcon.svg);
 }
 .safetyButton::before{
     content:"sas";
@@ -165,7 +165,7 @@ li a{
     width: 24px;
     height: 24px;
     margin-right: 3px;
-    background-image: url(/Img/Svgs/NavBarSafetyIcon.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/NavBarSafetyIcon.svg);
 }
 .rulesButton::before{
     content:"sas";
@@ -174,7 +174,7 @@ li a{
     height: 24px;
     padding-bottom: 2px;
     background: no-repeat;
-    background-image: url(/img/Svgs/NavBarRulesIcon.svg)
+    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavBarRulesIcon.svg)
 }
 .repairsButton::before{
     content:"sas";
@@ -182,7 +182,7 @@ li a{
     margin-right: 3px;
     width: 24px;
     height: 25px;
-    background-image: url(/img/Svgs/NavBarDIWhyIcon.svg)
+    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavBarDIWhyIcon.svg)
 }
 li a:hover, :focus, #activeNav, #activeFooter{
     background-color: var(--BronzeColor-color);
