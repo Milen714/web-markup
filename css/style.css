@@ -201,30 +201,30 @@ li a:hover, :focus, #activeNav, #activeFooter{
 }
     
 #heroImageHome{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/CentralBack.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://milen714.github.io/web-markup/Img/CentralBack.jpg);
 }
 #heroImageShopping{
     background-position: center 30%;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/ShopingBanner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://milen714.github.io/web-markup/Img/ShopingBanner.jpg);
 }
 #heroImageSafety{
     background-position: center 43%;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/Img/SafetyBanner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://milen714.github.io/web-markup/Img/SafetyBanner.jpg);
 }
 #heroImageRules{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/Img/RulesBanner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://milen714.github.io/web-markup/Img/RulesBanner.jpg);
 }
 #heroImageRepairs{
     background-position: center 30%;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/Img/windmill.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://milen714.github.io/web-markup/Img/windmill.jpg);
 }
 #heroImageContactUs{
     background-position: center 30%;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/Img/Contactusbanner2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://milen714.github.io/web-markup/Img/Contactusbanner2.jpg);
 
 }
 
@@ -470,23 +470,23 @@ figcaption{
 #svgHomePage1{
     bottom:  140px;
     left: 140px;
-    background-image: url(/Img/Svgs/Wheel.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Wheel.svg);
 }
 #svgHomePage2{
     width: 54px;
     bottom:  140px;
     left: 165px;
-    background-image: url(/Img/Svgs/Belasting.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Belasting.svg);
 }
 #svgHomePage3{
     bottom:  140px;
     left: 155px;
-    background-image: url(/Img/Svgs/InjurySvg.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/InjurySvg.svg);
 }
 #svgHomePage4{
     bottom:  140px;
     left: 145px;
-    background-image:  url(/Img/Svgs/SpinniBoy.svg);
+    background-image:  url(https://milen714.github.io/web-markup/Img/Svgs/SpinniBoy.svg);
 }
 /*Shop page InfoCard Svgs*/
 
@@ -494,21 +494,21 @@ figcaption{
     top: -115px;
     width: 95px;
     left: 140px;
-    background-image: url(/Img/Svgs/Wheel.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Wheel.svg);
     background-color: rgba(255, 255, 255, 0);
 }
 #shopP2, #shopP4, #shopP6, #shopP8{
     top: -115px;
     width: 95px;
     left: 140px;
-    background-image: url(/Img/Svgs/StroopWaffel.png);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/StroopWaffel.png);
     background-color: rgba(255, 255, 255, 0);
 }
 #elites{
     top: -115px;
     width: 95px;
     left: 140px;
-    background-image: url(/Img/Svgs/Oatly.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Oatly.svg);
     background-color: rgba(255, 255, 255, 0);
 }
 /*Safety Page Svgs*/
@@ -516,7 +516,7 @@ figcaption{
     top: -115px;
     width: 95px;
     left: 140px;
-    background-image: url(/Img/Svgs/InjurySvg.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/InjurySvg.svg);
     background-color: rgba(255, 255, 255, 0);
 }
 /*Rules Svgs*/
@@ -524,7 +524,7 @@ figcaption{
     top: -115px;
     width: 95px;
     left: 180px;
-    background-image: url(/Img/Svgs/Rules.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Rules.svg);
     background-color: rgba(255, 255, 255, 0);
 }
 #rules1::before, #rules2::before, #rules3::before, #rules4::before, #rules5::before, #rules6::before, #rules7::before, #rules8::before{
@@ -538,7 +538,7 @@ figcaption{
     width: 90px;
     height: px;
     margin-right: 3px;
-    background-image: url(/Img/Svgs/Belasting.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Belasting.svg);
 
 }
 
@@ -547,7 +547,7 @@ figcaption{
     top: -115px;
     width: 95px;
     left: 140px;
-    background-image: url(/Img/Svgs/SpinniBoy.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/SpinniBoy.svg);
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -660,7 +660,7 @@ label:nth-child(2){
     margin-right: 3px;
     padding-bottom: 3px;
     background-size: cover;
-    background-image: url(/Img/Svgs/Instagram.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Instagram.svg);
 }
 
 /* footer */
@@ -713,7 +713,7 @@ aside a{
     margin-right: 3px;
     padding-bottom: 3px;
     background-size: cover;
-    background-image: url(/Img/Svgs/Instagram.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Instagram.svg);
 }
 #twitter::before{
     content:"sas";
@@ -722,7 +722,7 @@ aside a{
     height: 26px;
     margin-right: 3px;
     padding-bottom: 2px;
-    background-image:  url(/Img/Svgs/SocialTwitter.svg);
+    background-image:  url(https://milen714.github.io/web-markup/Img/Svgs/SocialTwitter.svg);
 }
 #reddit::before{
     content:"sas";
@@ -731,7 +731,7 @@ aside a{
     height: 26px;
     margin-right: 3px;
     padding-bottom: 2px;
-    background-image: url(/Img/Svgs/Reddit.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Reddit.svg);
 }
 .rights{
     margin: 0;
