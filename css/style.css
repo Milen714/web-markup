@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box; 
+    scroll-behavior: smooth;
 }  
 *{
 margin: 0;
@@ -328,7 +329,8 @@ li a:hover, :focus, #activeNav, #activeFooter{
 }
 #shopbuttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
@@ -521,9 +523,23 @@ figcaption{
 #rules1, #rules2, #rules3, #rules4, #rules5, #rules6, #rules7, #rules8{
     top: -115px;
     width: 95px;
-    left: 140px;
+    left: 180px;
     background-image: url(/Img/Svgs/Rules.svg);
     background-color: rgba(255, 255, 255, 0);
+}
+#rules1::before, #rules2::before, #rules3::before, #rules4::before, #rules5::before, #rules6::before, #rules7::before, #rules8::before{
+    position: absolute;
+    right: 38px;
+    content:"sas";
+    color: transparent;
+    padding: 15px;
+    padding-bottom: 90px;
+    background: no-repeat;
+    width: 90px;
+    height: px;
+    margin-right: 3px;
+    background-image: url(/Img/Svgs/Belasting.svg);
+
 }
 
 /*Repairs Svgs*/
@@ -728,16 +744,13 @@ strong{
 .popWrap{
     position: absolute;
     bottom: 0;
-            left: 70%;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    left: 4%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.popWrap:target{
-    
-    border: solid red 2px;
-}
+
 .popUp{
     position: relative;
     padding: 5px;
@@ -769,6 +782,9 @@ strong{
 @media only screen and (max-width: 768px){
     .hero-text h2{
         font-size: 1.4em;
+    }
+    #shopbuttons{
+        display: block;
     }
     .mission-section__body{
         flex-direction: column;
