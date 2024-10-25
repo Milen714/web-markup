@@ -148,7 +148,7 @@ li a{
     height: 24px;
     margin-right: 3px;
     background: no-repeat;
-    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavbarShopIcon.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/NavbarShopIcon.svg);
 }
 .homeButton:before{
     content:"sa";
@@ -157,7 +157,7 @@ li a{
     width: 24px;
     height: 24px;
     background: no-repeat;
-    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavBarHomeIcon.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/NavBarHomeIcon.svg);
 }
 .safetyButton::before{
     content:"sas";
@@ -174,7 +174,7 @@ li a{
     height: 24px;
     padding-bottom: 2px;
     background: no-repeat;
-    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavBarRulesIcon.svg)
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/NavBarRulesIcon.svg)
 }
 .repairsButton::before{
     content:"sas";
@@ -182,7 +182,7 @@ li a{
     margin-right: 3px;
     width: 24px;
     height: 25px;
-    background-image: url(https://milen714.github.io/web-markup/img/Svgs/NavBarDIWhyIcon.svg)
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/NavBarDIWhyIcon.svg)
 }
 li a:hover, :focus, #activeNav, #activeFooter{
     background-color: var(--BronzeColor-color);
@@ -596,13 +596,26 @@ figcaption{
     left: 76px;
     z-index: -2;
 }
+fieldset{
+    border: 0;
+}
 
 legend h2{
     color: var(--mainColor-color);
 }
 legend{
-    padding: 20px;
-    
+    padding: 20px; 
+}
+#mandatoryfields{
+   float: right;
+}
+#mandatoryfields strong{
+    font-size: 16px;
+    font-style: italic;
+}
+.aster{
+    font-size: 20px;
+    color: rgb(175, 32, 32);
 }
 .forms{
     margin-bottom: 45px;
@@ -627,13 +640,16 @@ label{
     font-weight: 700;
     font-size: 16px;
     color: var(--mainColor-color);
-    margin-top: 25px;
+    margin-top: 19px;
 }
 label:nth-child(2){
     margin-top: 0;
 }
 #title, #fname, #lname, #message, #phoneNumber, #email{
     border-radius: 10px;
+    border-color: #306598;
+    border: solid var(--delfColor-color) 2px;
+    background: #bfbabe00;
     padding: 5px;
 }
 #message{
@@ -646,21 +662,29 @@ label:nth-child(2){
     padding: 10px;
     background-color: var(--mainColor-color);
     color: white;
+    box-shadow: -5px -5px 4px 0px #306598;
     border-radius: 10px;
     float: right;
     font-family: "Alata", sans-serif;
     font-weight: 900;
     font-size: 16px;
+    border: 0;
 }
 #submitbutton::before{
     content:"saS";
     color: transparent;
-    width: 30px;
+    width: 64px;
     height: 30px;
     margin-right: 3px;
-    padding-bottom: 3px;
+    padding-right: 43px;
+    padding-bottom: 5px;
     background-size: cover;
-    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Instagram.svg);
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/BackfietsSvg.svg);
+}
+#submitbutton:hover{
+    background-color: green;
+    box-shadow: 5px 5px 4px 0px rgb(39, 225, 39);
+    transition: ease-in 500ms;
 }
 
 /* footer */
@@ -685,8 +709,7 @@ footer ul{
 {
     grid-row: 1;
     text-align: end;
-    margin: 25px;
-    
+    margin: 25px;  
 }
 .socials-list{
     display: flex;
@@ -811,6 +834,9 @@ strong{
     }
     .hero-image{
         display: none;
+    }
+    .popWrap{
+        bottom: 20px;
     }
     
 }
