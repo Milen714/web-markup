@@ -72,6 +72,14 @@ html, body {
     p::first-letter{
         font-size: 1.2em;
     }
+    .hyperLinks{
+        text-decoration: none;
+        font-style: italic;
+    }
+    .hyperLinks:visited{
+        text-decoration: underline;
+        color: black;
+    }
     h1{
         font-size: 40px;
         font-family: "Acme", sans-serif;
@@ -92,7 +100,9 @@ html, body {
         font-style: normal;
         font-weight: 900;
         color: var(--mainColor-color);
-        
+    }
+    em{
+        font-style: italic;
     }
 
 .logo{
@@ -144,6 +154,7 @@ li a{
     content:"sas";
     color: transparent;
     padding-right: 1px;
+    padding-bottom: 3px;
     width: 24px;
     height: 24px;
     margin-right: 3px;
@@ -153,6 +164,7 @@ li a{
 .homeButton:before{
     content:"sa";
     padding-right: 3px;
+    padding-bottom: 3px;
     color: transparent;
     width: 24px;
     height: 24px;
@@ -162,6 +174,8 @@ li a{
 .safetyButton::before{
     content:"sas";
     color: transparent;
+    background: no-repeat;
+    padding-bottom: 3px;
     width: 24px;
     height: 24px;
     margin-right: 3px;
@@ -180,6 +194,8 @@ li a{
     content:"sas";
     color: transparent;
     margin-right: 3px;
+    background: no-repeat;
+    padding-bottom: 4px;
     width: 24px;
     height: 25px;
     background-image: url(https://milen714.github.io/web-markup/Img/Svgs/NavBarDIWhyIcon.svg)
@@ -468,23 +484,23 @@ figcaption{
         
     }  */
 #svgHomePage1{
-    bottom:  140px;
+    bottom:  100px;
     left: 140px;
     background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Wheel.svg);
 }
 #svgHomePage2{
     width: 54px;
-    bottom:  140px;
+    bottom:  100px;
     left: 165px;
     background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Belasting.svg);
 }
 #svgHomePage3{
-    bottom:  140px;
+    bottom:  100px;
     left: 155px;
     background-image: url(https://milen714.github.io/web-markup/Img/Svgs/InjurySvg.svg);
 }
 #svgHomePage4{
-    bottom:  140px;
+    bottom:  100px;
     left: 145px;
     background-image:  url(https://milen714.github.io/web-markup/Img/Svgs/SpinniBoy.svg);
 }
@@ -536,7 +552,7 @@ figcaption{
     padding-bottom: 90px;
     background: no-repeat;
     width: 90px;
-    height: px;
+    height: 90px;
     margin-right: 3px;
     background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Belasting.svg);
 
@@ -569,7 +585,7 @@ figcaption{
     border-radius: 10px 0 0 10px;
     background-color: var(--infocardBlue-color);
 }
-.contactInfoContent h2{
+.contactInfoContent header>h2{
     color: var(--mainColor-color);
     text-align: center;
 }
