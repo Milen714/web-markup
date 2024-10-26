@@ -109,6 +109,9 @@ html, body {
     padding: 0.7em 0 0.7em;
     background-color: white;
 }
+.logoToHome{
+    text-decoration: none;
+}
 header{
     padding:  1em 0 2em;
     
@@ -778,12 +781,13 @@ aside a{
     color: white;
 }
 strong{
-    font-size: 20px;
+    font-size: 9px;
+    font-style: italic;
 }
-.popWrap{
+.cookies{
     position: absolute;
-    bottom: 0;
-    left: 4%;
+    bottom: 20px;
+    left: 0%;
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -792,26 +796,21 @@ strong{
 
 .popUp{
     position: relative;
-    padding: 5px;
     width: 95px;
-    height: 36px;
-    background-color: var(--mainColor-color);
+    height: 95px;
+    background-image: url(https://milen714.github.io/web-markup/Img/Svgs/Cookies.svg);
 }
 .popUp p{
-    color: white;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    color: var(--mainColor-color);
+    text-align: center;
     text-indent: 0;
+    line-height: 7px;
 }
-.close{
-    position: absolute; 
-    top: -20px; 
-    right: 20px; 
-    font-size: 20px;
-    font-weight: bold;
-    color: black
-}
-.close:hover{
-    color: orange;
-}
+
+
 
 @media only screen and (min-width: 769px){
     .heroMobile{
@@ -851,9 +850,23 @@ strong{
     .hero-image{
         display: none;
     }
-    .popWrap{
-        bottom: 20px;
+    .cookies{
+        bottom: 32%;
+        left: 37%;
     }
     
 }
+@media screen and (max-width: 450px){
+    .cookies{
+        bottom: 27%;
+        left: 37%;
+    }
+}
+@media screen and (max-width: 330px){
+    .cookies{
+        bottom: 15%;
+        left: 37%;
+    }
+}
+
 
